@@ -17,3 +17,12 @@ This SSH key is unique to your team and allows you read-only accesss to the repo
 The following instructions are an example for a macOS environment, adjust to your toolset! As long as you git pull and git clone using this SSH key, how you get there is a-okay!
 
 - Download the **Private SSH** Key from [gitstore](https://enjoy.gitstore.app/subscriptions)
+- Save it into your SSH folder e.g. `~/.ssh/forged-ui.key`
+- Make sure the permissions on it are correct e.g. `chmod 600 ~/.ssh/forged-ui.key`
+- Load it into your SSH agent/Peagant e.g. `ssh-add ~/.ssh/forged-ui.key`
+- Confirm it has loaded with `ssh-add -L`
+- Clone the repository via `git clone git@github.com:OwenMelbz/forged-ui.git`
+
+## Compiling
+
+
