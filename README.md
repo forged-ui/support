@@ -62,7 +62,6 @@ Please be aware the more you modify the code - the tricker merging upstream chan
 ## Known Issues
 
 - **Use delete() to clear values** - Some people have experienced an error mentioning  You can just dismiss this and add your API key, this should then go away until we've found out why!
-- **Missing Reconnect Confirmation** - When clicking Reconnect, a notification should be displayed.
 - **MetaScrape Error** - When a website is inaccessible MetaScrape shouts really loudly, will be looking to hadnle this.
 
 ## Anything Else?
