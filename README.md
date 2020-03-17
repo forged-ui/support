@@ -25,4 +25,35 @@ The following instructions are an example for a macOS environment, adjust to you
 
 ## Compiling
 
+Forged UI is built using [electron-react-boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate) which which makes it straight forward to get going.
+
+Firstly install the project via `yarn` then package it.
+
+- `yarn install` - Will install all the dependencies
+- `yarn package` - Will compile for your current platform
+
+You can read the `package.json` for various other commands which allow compiling for other environments e.g.
+
+- `yarn package-mac`
+- `yarn package-win`
+- `yarn package-linux`
+- `yarn package-all`
+
+You will end up with a `/releases` directory which will contain your built application!
+
+For macOS we recommend moving this to the `~/Applications` directory to prevent any strange side-effects.
+
+## Customising
+
+To customise the application, you can do so simply by modifying the source-code!
+
+Everything you need to edit should be within the `/app` directory - you can start watching the files and live-reloading by using `yarn dev` 
+
+Once you're happy, you can `yarn package` again to distribute to your team.
+
+Please be aware the more you modify the code - the tricker merging upstream changes will be! So keep an eye on things.
+
+## Anything Else?
+
+If you think we've missed something, then contact us on `hello@forged-ui.com` or open an issue on GitHub.
 
