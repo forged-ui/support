@@ -43,6 +43,12 @@ You will end up with a `/releases` directory which will contain your built appli
 
 For macOS we recommend moving this to the `~/Applications` directory to prevent any strange side-effects.
 
+## Deployment Hooks
+
+We connect to Pusher if you want and can listen for Forges deployment hooks. You can download the script needed to pass on these deployment notifications to Pusher on our [forge-ui/webhooks](https://github.com/forged-ui/webhook) repo.
+
+Effecitvely it's a PHP script powered by composer packages which takes the JSON payload from Forge, and passes it on to Pusher, which the Forged UI listens for.
+
 ## Customising
 
 To customise the application, you can do so simply by modifying the source-code!
@@ -52,6 +58,12 @@ Everything you need to edit should be within the `/app` directory - you can star
 Once you're happy, you can `yarn package` again to distribute to your team.
 
 Please be aware the more you modify the code - the tricker merging upstream changes will be! So keep an eye on things.
+
+## Known Issues
+
+- **Use delete() to clear values** - Some people have experienced an error mentioning  You can just dismiss this and add your API key, this should then go away until we've found out why!
+- **Missing Reconnect Confirmation** - When clicking Reconnect, a notification should be displayed.
+- **MetaScrape Error** - When a website is inaccessible MetaScrape shouts really loudly, will be looking to hadnle this.
 
 ## Anything Else?
 
