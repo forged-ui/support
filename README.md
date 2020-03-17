@@ -47,7 +47,7 @@ For macOS we recommend moving this to the `~/Applications` directory to prevent 
 
 We connect to Pusher if you want and can listen for Forges deployment hooks. You can download the script needed to pass on these deployment notifications to Pusher on our [forge-ui/webhooks](https://github.com/forged-ui/webhook) repo.
 
-Effecitvely it's a PHP script powered by composer packages which takes the JSON payload from Forge, and passes it on to Pusher, which the Forged UI listens for - Full instructions are provided within the `webhook` repo.
+Effecitvely it's a PHP script powered by composer packages which takes the JSON payload from Forge, and passes it on to Pusher, which the Forged UI listens for - Full instructions are provided within the [forge-ui/webhooks](https://github.com/forged-ui/webhook) repo.
 
 ## Customising
 
