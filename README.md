@@ -31,6 +31,8 @@ The following instructions are an example for a macOS environment, adjust to you
 
 Forged UI is built using [electron-react-boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate) which which makes it straight forward to get going.
 
+> ERB (Electron React Boilerplate) Uses `yarn` as its package manager of choice, although `npm` should work just as well! For these examples we'll use `yarn` as it follows the ERB documentation. If you need to install `yarn` first you can find out how on their [website](https://classic.yarnpkg.com/en/docs/install/) for homebrew users you can use `brew install yarn`
+
 Firstly install the project via `yarn` then package it.
 
 - `yarn install` - Will install all the dependencies
