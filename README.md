@@ -21,8 +21,8 @@ The following instructions are an example for a macOS environment, adjust to you
 - Make sure the permissions on it are correct e.g. `chmod 600 ~/.ssh/forged-ui.key`
 - Load it into your SSH agent/Peagant e.g. `ssh-add ~/.ssh/forged-ui.key`
 - Confirm it has loaded with `ssh-add -L`
-- Change into the directory you want the code to be stored in e.g. `cd ~/Projects`
 - **Restarting terminal** - Some terminal clients require you to open a new tab/window/instance to load in the SSH key
+- Change into the directory you want the code to be stored in e.g. `cd ~/Projects`
 - Clone the repository via `git clone git@github.com:OwenMelbz/forged-ui.git`
 
 > *Help!* If you get a message like "Make sure you have correct access rights" this means the SSH key is not loading. You should confirm it has loaded with `ssh-add -L` or if not try cloning using the following command (replace paths where needed) `bash -c 'ssh-add ~/.ssh/forged-ui.key; git clone git@github.com:OwenMelbz/forged-ui.git'`
