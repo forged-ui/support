@@ -51,6 +51,10 @@ For macOS we recommend moving this to the `~/Applications` directory to prevent 
 
 ## Deployment Hooks
 
+If you would like to use the deployment hooks feature, we'll need to establish a connection with [Pusher](https://dashboard.pusher.com/accounts/sign_up). This is free and only takes a couple of minutes! 
+
+> If you do not want to use deployment notifications then this whole step is optional and can be ignored within the UI.
+
 We connect to Pusher if you want and can listen for Forges deployment hooks. You can download the script needed to pass on these deployment notifications to Pusher on our [forge-ui/webhook](https://github.com/forged-ui/webhook) repo.
 
 Effecitvely it's a PHP script powered by composer packages which takes the JSON payload from Forge, and passes it on to Pusher, which the Forged UI listens for - Full instructions are provided within the [forge-ui/webhook](https://github.com/forged-ui/webhook) repo.
