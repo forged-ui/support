@@ -72,6 +72,7 @@ Please be aware the more you modify the code - the tricker merging upstream chan
 ## Known Issues
 
 - **Windows 10 Notifications** - These do not currently work due to a bug in Electron -> https://www.electronjs.org/docs/tutorial/notifications#windows will be continuing to try and resolve this.
+- **SSL Generation** - Uses a different format to forge also creates an exception when cancelled.
 
 ## Anything Else?
 
